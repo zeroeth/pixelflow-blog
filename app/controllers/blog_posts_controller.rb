@@ -2,7 +2,7 @@ class BlogPostsController < ApplicationController
   # GET /blog_posts
   # GET /blog_posts.xml
   def index
-    @blog_posts = BlogPost.all
+    @blog_posts = BlogPost.paginate
 
     respond_to do |format|
       format.html # index.html.erb
