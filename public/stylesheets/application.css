@@ -2,6 +2,20 @@ body {
   color: #eeeeec;
   background-color: #888a85;
 }
+
+.blog_header {
+  margin-top: 16px;
+}
+
+.blog_header h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.blog_header img, .blog_header div {
+  float: left;
+  margin-right: 16px;
+}
 .personal_links {
   color: #eeeeec;
   background-color: #555753;
@@ -9,7 +23,7 @@ body {
   margin: 16px 0;
 }
 
-.blog_post, #disqus_thread {
+.blog_post, #disqus_thread,.blog_pagination {
   color: black;
   background-color: #eeeeec;
   padding: 16px;
@@ -17,7 +31,7 @@ body {
 }
 
 a:link    {color:#3464a4;} /* unvisited link */
-a:visited {color:#75507b;} /* visited link */
+a:visited {color:#3464a4;} /* visited link */
 a:hover   {color:#3464a4;} /* mouse over link */
 a:active  {color:#3464a4;} /* selected link */
 

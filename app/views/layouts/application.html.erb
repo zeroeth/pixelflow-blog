@@ -15,7 +15,13 @@
 
   <div class="container_12">
     <div class="grid_12">
-      <h1>pixelflow</h1>
+      <div class="blog_header">
+        <%= image_tag "hexflower.png" %>
+        <div>
+          <h1>pixelflow</h1>
+          robotic ruby symphony
+        </div>
+      </div>
     </div>
     <div class="clear"></div>
 
@@ -24,10 +30,22 @@
     </div>
     <div class="grid_3">
       <div class="personal_links">
-        <h2>Links</h2>
+        <p>
+          Hi! My name is Kevin Alford and here you will find my ramblings on code, electronic music, robotics, and just about anything inbetween.
+        </p>
+        <h2>Me</h2>
         <ul>
-          <li><strong><%= link_to 'github', "http://github.com/zeroeth" %></strong></li>
-          <li><strong><%= link_to 'twitter', "http://twitter.com/kevinalford" %></strong></li>
+          <li><strong><%= link_to 'My resume', "Kevin Alford - resume.pdf" %></strong></li>
+          <li><strong><%= link_to 'My github', "http://github.com/zeroeth" %></strong></li>
+          <li><strong><%= link_to 'My twitter', "http://twitter.com/kevinalford" %></strong></li>
+        </ul>
+        <h3> Places to visit </h3>
+        <ul>
+          <li><strong><%= link_to 'Rails Guides', "http://guides.rubyonrails.org/" %></strong></li>
+          <li><strong><%= link_to 'Rails Casts', "http://railscasts.com" %></strong></li>
+          <li><strong><%= link_to 'Ruby Inside', "http://www.rubyinside.com" %></strong></li>
+          <li><strong><%= link_to 'Synthtopia', "http://www.synthtopia.com" %></strong></li>
+          <li><strong><%= link_to 'Make: blog', "http://blog.makezine.com" %></strong></li>
         </ul>
       </div>
     </div>
