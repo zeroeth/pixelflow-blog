@@ -1,0 +1,16 @@
+body {
+  color: black;
+  background-color: #eeeeec;
+}
+.personal_links {
+  color: #eeeeec;
+  background-color: #2e3436;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.blog_post {
+  background-color: #d3d7cf;
+  padding: 16px;
+  margin: 16px 0;
+}
