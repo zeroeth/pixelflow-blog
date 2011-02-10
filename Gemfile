@@ -29,3 +29,7 @@ gem 'pg'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+gem 'haml'
+gem 'maruku'
+gem 'will_paginate'

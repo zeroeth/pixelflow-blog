@@ -7,7 +7,7 @@
 
 <p>
   <b>Body:</b>
-  <%= @blog_post.body %>
+  <%= Maruku.new(@blog_post.body).to_html.html_safe %>
 </p>
 
 
