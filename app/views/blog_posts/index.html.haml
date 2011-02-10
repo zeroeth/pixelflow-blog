@@ -1,23 +1,7 @@
-.container_12
-  .grid_12
-    %h1 pixelflow
-
-  .clear
-
-  .grid_9
-    - @blog_posts.each do |blog_post|
-      .blog_post
-        %h1
-          =link_to blog_post.title, blog_post
-        .blog_body
-          = Maruku.new(blog_post.body).to_html.html_safe
-    = will_paginate @blog_posts
-  .grid_3
-    .personal_links
-      %h2 Links
-      %ul
-        %li= link_to 'github', "http://github.com/zeroeth"
-        %li= link_to 'twitter', "http://twitter.com/kevinalford"
-
-
-  .clear
+- @blog_posts.each do |blog_post|
+  .blog_post
+    %h1
+      =link_to blog_post.title, blog_post
+    .blog_body
+      = Maruku.new(blog_post.body).to_html.html_safe
+= will_paginate @blog_posts

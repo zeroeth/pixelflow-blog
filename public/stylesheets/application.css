@@ -1,16 +1,27 @@
 body {
-  color: black;
-  background-color: #eeeeec;
+  color: #eeeeec;
+  background-color: #888a85;
 }
 .personal_links {
   color: #eeeeec;
-  background-color: #2e3436;
+  background-color: #555753;
   padding: 16px;
   margin: 16px 0;
 }
 
-.blog_post {
-  background-color: #d3d7cf;
+.blog_post, #disqus_thread {
+  color: black;
+  background-color: #eeeeec;
   padding: 16px;
   margin: 16px 0;
 }
+
+a:link    {color:#3464a4;} /* unvisited link */
+a:visited {color:#75507b;} /* visited link */
+a:hover   {color:#3464a4;} /* mouse over link */
+a:active  {color:#3464a4;} /* selected link */
+
+.personal_links a:link    {color:#729fcf;} /* unvisited link */
+.personal_links a:visited {color:#729fcf;} /* visited link */
+.personal_links a:hover   {color:#729fcf;} /* mouse over link */
+.personal_links a:active  {color:#729fcf;} /* selected link */
