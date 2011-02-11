@@ -1,0 +1,30 @@
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 'auto',
+  theme: {
+    shell: {
+      background: '#555753',
+      color: '#729fcf'
+    },
+    tweets: {
+      background: '#555753',
+      color: '#eeeeec',
+      links: '#729fcf'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: false,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('kevinalford').start();
+</script>

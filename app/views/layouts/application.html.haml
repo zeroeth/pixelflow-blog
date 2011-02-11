@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title PixelflowBlog
+    %title pixelflow blog :: kevin's ruby romance
     = stylesheet_link_tag 'css/reset.css'
     = stylesheet_link_tag 'css/text.css'
     = stylesheet_link_tag 'css/960.css'
@@ -16,8 +16,9 @@
       .grid_9
         = yield
       .grid_3
+        = render 'layouts/fork_me'
+        = render 'layouts/about'
+        = render 'layouts/twitter'
         = render 'layouts/links'
-        = render 'layouts/github'
       .clear
-    = render 'layouts/fork_me'
     = render 'layouts/analytics'
