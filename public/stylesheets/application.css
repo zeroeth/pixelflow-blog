@@ -5,6 +5,7 @@ body {
 
 .blog_header {
   margin-top: 16px;
+  text-shadow: 0 1px 5px #666;
 }
 
 .blog_header h1 {
