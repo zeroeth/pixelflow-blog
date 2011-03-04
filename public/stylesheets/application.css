@@ -3,6 +3,13 @@ body {
   background-color: #888a85;
 }
 
+code {
+  background-color: #d3d7cf;
+  color: #2e3436;
+  border: 1px solid #babdb6;
+  padding: 2px;
+}
+
 .blog_header {
   margin-top: 16px;
   text-shadow: 0 1px 5px #666;
