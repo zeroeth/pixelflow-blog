@@ -6,6 +6,7 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'decent_exposure'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -33,3 +34,9 @@ gem 'pg'
 gem 'haml'
 gem 'maruku'
 gem 'will_paginate'
+
+group :test do
+  gem 'rspec'
+  gem 'cucumber-rails'
+  gem 'fabrication'
+end
