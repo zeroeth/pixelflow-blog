@@ -38,6 +38,29 @@ code {
   margin: 16px 0;
 }
 
+.petal {
+  border-top: 10px solid;
+}
+.petal_1 {
+  border-top-color: #DD191B; /* red */
+}
+
+.petal_2 {
+  border-top-color: #F4A210; /* orange */
+}
+
+.petal_3 {
+  border-top-color: #87E100; /* green */
+}
+
+.petal_4 {
+  border-top-color: #638BC9; /* blue */
+}
+
+.petal_5 {
+  border-top-color: #98699B; /* purple */
+}
+
 a:link    {color:#3464a4;} /* unvisited link */
 a:visited {color:#3464a4;} /* visited link */
 a:hover   {color:#3464a4;} /* mouse over link */
