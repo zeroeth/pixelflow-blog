@@ -42,23 +42,23 @@ code {
   border-top: 10px solid;
 }
 .petal_1 {
-  border-top-color: #DD191B; /* red */
+  border-top-color: #ef2929; /* red */
 }
 
 .petal_2 {
-  border-top-color: #F4A210; /* orange */
+  border-top-color: #fcaf3e; /* orange */
 }
 
 .petal_3 {
-  border-top-color: #87E100; /* green */
+  border-top-color: #8ae234; /* green */
 }
 
 .petal_4 {
-  border-top-color: #638BC9; /* blue */
+  border-top-color: #729fcf; /* blue */
 }
 
 .petal_5 {
-  border-top-color: #98699B; /* purple */
+  border-top-color: #ad7fa8; /* purple */
 }
 
 a:link    {color:#3464a4;} /* unvisited link */
