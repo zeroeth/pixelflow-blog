@@ -15,6 +15,8 @@
         = render 'layouts/header'
       .clear
       .grid_9
+        - if notice
+          #notice= notice
         = yield
       .grid_3
         = render 'layouts/fork_me'

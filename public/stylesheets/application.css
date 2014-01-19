@@ -25,6 +25,14 @@ code {
   margin-right: 16px;
 }
 
+#notice {
+  padding: 16px;
+  background-color: #729fcf;
+  margin: 16px 0;
+  border-left: 10px solid;
+  border-left-color: #d3d7cf;
+}
+
 #error_explanation {
   color: #2e3436;
   background-color: #d3d7cf;
