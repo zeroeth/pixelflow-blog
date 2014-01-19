@@ -24,11 +24,20 @@ code {
   float: left;
   margin-right: 16px;
 }
-.personal_links {
+
+.tweet_box, .personal_links {
   color: #eeeeec;
   background-color: #555753;
-  padding: 16px;
   margin: 16px 0;
+}
+
+.personal_links {
+  padding: 16px;
+}
+
+.tweet_box {
+	padding: 16px;
+
 }
 
 .blog_post, #disqus_thread,.blog_pagination {
