@@ -25,19 +25,23 @@ code {
   margin-right: 16px;
 }
 
-.tweet_box, .personal_links {
-  color: #eeeeec;
-  background-color: #555753;
+#error_explanation {
+  color: #2e3436;
+  background-color: #d3d7cf;
   margin: 16px 0;
-}
-
-.personal_links {
   padding: 16px;
 }
 
-.tweet_box {
-	padding: 16px;
+.field_with_errors label
+{
+  color: #ef2929;
+}
 
+.tweet_box, .personal_links  {
+  color: #eeeeec;
+  background-color: #555753;
+  margin: 16px 0;
+  padding: 16px;
 }
 
 .blog_post, #disqus_thread,.blog_pagination {
@@ -49,6 +53,7 @@ code {
 
 .petal {
   border-top: 10px solid;
+  border-top-color: #555753;
 }
 .petal_1 {
   border-top-color: #ef2929; /* red */

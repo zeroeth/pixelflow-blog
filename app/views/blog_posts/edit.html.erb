@@ -1,6 +1,8 @@
-<h1>Editing blog_post</h1>
+<div class="blog_post petal petal_<%= @blog_post.id % 5 + 1 %>">
+	<h1>Editing Blog Post</h1>
 
-<%= render 'form' %>
+	<%= render 'form' %>
 
-<%= link_to 'Show', @blog_post %> |
-<%= link_to 'Back', blog_posts_path %>
+	<%= link_to 'Show', @blog_post %> |
+	<%= link_to 'Back', blog_posts_path %>
+</div>
