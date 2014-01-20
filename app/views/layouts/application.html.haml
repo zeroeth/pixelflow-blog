@@ -2,7 +2,7 @@
 %html{:xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", "xml:lang" => "en"}
   %head
     %meta{:charset => "UTF-8"}
-    %meta{:property => "og:image", :content => image_path('hexflower.png')}
+    %meta{:property => "og:image", :content => "#{request.protocol}#{request.host_with_port}#{image_path('hexflower.png')}"}
     %meta{:property => "og:type", :content => "blog"}
     %title pixelflow blog :: kevin's intergalactic romance
     = stylesheet_link_tag 'css/reset.css'
