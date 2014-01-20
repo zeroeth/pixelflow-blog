@@ -11,7 +11,7 @@ class BlogPostsController < ApplicationController
 
 
   def show
-    @blog_post = BlogPost.find(params[:id])
+    @blog_post = BlogPost.where(url: params[:id]).first
 
 	respond_with @blog_post
   end
@@ -25,12 +25,12 @@ class BlogPostsController < ApplicationController
 
 
   def edit
-    @blog_post = BlogPost.find(params[:id])
+    @blog_post = BlogPost.where(url: params[:id]).first
   end
 
 
   def create
-    @blog_post = BlogPost.new(params[:blog_post])
+    @blog_post = BlogPost.where(url: params[:id]).first
 
 	if @blog_post.save
 		flash[:notice] = 'Blog post was successfully created.'
@@ -41,7 +41,7 @@ class BlogPostsController < ApplicationController
 
 
   def update
-    @blog_post = BlogPost.find(params[:id])
+    @blog_post = BlogPost.where(url: params[:id]).first
 
     if @blog_post.update_attributes(params[:blog_post])
 		flash[:notice] = 'Blog post was successfully updated.'
@@ -50,10 +50,9 @@ class BlogPostsController < ApplicationController
 	respond_with @blog_post
   end
 
-  # DELETE /blog_posts/1
-  # DELETE /blog_posts/1.xml
+
   def destroy
-    @blog_post = BlogPost.find(params[:id])
+    @blog_post = BlogPost.where(url: params[:id]).first
     @blog_post.destroy
 
 	respond_with @blog_post
