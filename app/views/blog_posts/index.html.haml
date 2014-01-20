@@ -5,4 +5,4 @@
     .blog_body
       = Maruku.new(blog_post.body).to_html.html_safe
 .blog_pagination
-  = will_paginate @blog_posts
+  = will_paginate @blog_posts, class: 'digg_pagination'

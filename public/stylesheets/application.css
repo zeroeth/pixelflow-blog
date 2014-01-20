@@ -92,3 +92,51 @@ a:active  {color:#3464a4;} /* selected link */
 .personal_links a:visited {color:#729fcf;} /* visited link */
 .personal_links a:hover   {color:#729fcf;} /* mouse over link */
 .personal_links a:active  {color:#729fcf;} /* selected link */
+
+.digg_pagination {
+  cursor: default;
+  /* self-clearing method: */ }
+  .digg_pagination a, .digg_pagination span, .digg_pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+  .digg_pagination .disabled {
+    color: #999999;
+    border: 1px solid #dddddd; }
+  .digg_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    color: #eeeeec; }
+
+  .digg_pagination .current:nth-child(5n+0) {
+    background: #ad7fa8;
+    border: 1px solid #ad7fa8; }
+  .digg_pagination .current:nth-child(5n+1) {
+    background: #729fcf;
+    border: 1px solid #729fcf; }
+  .digg_pagination .current:nth-child(5n+2) {
+    background: #8ae234;
+    border: 1px solid #8ae234; }
+  .digg_pagination .current:nth-child(5n+3) {
+    background: #fcaf3e;
+    border: 1px solid #fcaf3e; }
+  .digg_pagination .current:nth-child(5n+4) {
+    background: #ef2929;
+    border: 1px solid #ef2929; }
+
+  .digg_pagination a {
+    text-decoration: none;
+    color: #eeeeec;
+	background: #555753;
+    border: 1px solid #555753; }
+  .digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .digg_pagination {
+    height: 1%; }
+  *:first-child + html .digg_pagination {
+    overflow: hidden; }
