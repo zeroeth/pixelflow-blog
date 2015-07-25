@@ -6,7 +6,6 @@ gem 'rails', '3.0.3'
 gem 'puma'
 gem 'pg'
 gem 'decent_exposure'
-gem 'taps'
 
 gem 'haml'
 gem 'maruku'
@@ -16,6 +15,7 @@ gem 'stringex'
 
 group :development do
  gem 'sqlite3-ruby', :require => 'sqlite3'
+ gem 'taps'
 end
 
 group :test do
