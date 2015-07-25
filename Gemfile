@@ -1,7 +1,9 @@
 source 'http://rubygems.org'
+ruby "1.9.2"
 
 gem 'rails', '3.0.3'
 
+gem 'puma'
 gem 'pg'
 gem 'decent_exposure'
 gem 'taps'

@@ -72,6 +72,7 @@ GEM
     nokogiri (1.5.0)
     pg (0.10.1)
     polyglot (0.3.1)
+    puma (2.12.2)
     rack (1.2.1)
     rack-mount (0.6.13)
       rack (>= 1.0.0)
@@ -140,9 +141,13 @@ DEPENDENCIES
   haml
   maruku
   pg
+  puma
   rails (= 3.0.3)
   rspec
   sqlite3-ruby
   stringex
   taps
   will_paginate
+
+BUNDLED WITH
+   1.10.6
