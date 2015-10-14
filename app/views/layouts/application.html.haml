@@ -8,6 +8,7 @@
     = stylesheet_link_tag 'css/reset.css'
     = stylesheet_link_tag 'css/text.css'
     = stylesheet_link_tag 'css/960.css'
+    = stylesheet_link_tag 'css/fonts.css'
     = stylesheet_link_tag 'application.css'
     = javascript_include_tag :defaults
     = csrf_meta_tag
@@ -16,14 +17,14 @@
       .grid_12
         = render 'layouts/header'
       .clear
-      .grid_9
+      .grid_12
         - if notice
           #notice= notice
         ~ yield
-      .grid_3
-        = render 'layouts/fork_me'
-        = render 'layouts/about'
-        = render 'layouts/twitter'
-        = render 'layouts/links'
+      /.grid_3
+      /= render 'layouts/fork_me'
+      /= render 'layouts/about'
+      /= render 'layouts/twitter'
+      /= render 'layouts/links'
       .clear
     = render 'layouts/analytics'

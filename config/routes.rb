@@ -1,5 +1,8 @@
 PixelflowBlog::Application.routes.draw do
   resources :blog_posts
-  root to: 'blog_posts#index'
+
   get 'login', to: 'sessions#login'
+  get 'portfolio', to: 'portfolio#index'
+
+  root to: 'portfolio#index'
 end

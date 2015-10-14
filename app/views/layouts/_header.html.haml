@@ -1,6 +1,16 @@
 .blog_header
   = link_to "/" do
-    = image_tag "hexflower.png"
-  %div
-    %h1 pixelflow
-    robotic ruby symphony
+    = image_tag "hexflower_big.png"
+  .left.title
+    %h1 Pixelflow
+    .text
+      A Robotic Ruby Symphony
+  .right.social
+    = link_to "https://twitter.com/kevinalford", target: '_blank' do
+      <span class="icon icon-birdy"></span><span class="text">Twitter</span>
+  .right.social
+    = link_to "https://github.com/zeroeth", target: '_blank' do
+      <span class="icon icon-catopus"></span><span class="text">Github</span>
+  .right.social
+    = link_to blog_posts_path do
+      <span class="icon icon-ruby"></span><span class="text">Articles</span>

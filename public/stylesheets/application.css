@@ -1,6 +1,7 @@
 body {
   color: #eeeeec;
-  background-color: #888a85;
+  background-color: #222;
+  font-size: 100%;
 }
 
 code {
@@ -12,17 +13,29 @@ code {
 
 .blog_header {
   margin-top: 16px;
-  text-shadow: 0 1px 5px #666;
+  text-shadow: 0 0 15px #677;
+  font-family: 'hyperspacebold';
 }
+
 
 .blog_header h1 {
   font-size: 50px;
   margin: 0;
 }
 
-.blog_header img, .blog_header div {
+.blog_header .left {
   float: left;
   margin-right: 16px;
+}
+
+.blog_header .right {
+  float: right;
+  margin-left: 16px;
+}
+
+.blog_header img {
+  height: 100px;
+  margin-left: -50px;
 }
 
 #notice {
@@ -45,16 +58,9 @@ code {
   color: #ef2929;
 }
 
-.tweet_box, .personal_links  {
-  color: #eeeeec;
-  background-color: #555753;
-  margin: 16px 0;
-  padding: 16px;
-}
-
 .blog_post, #disqus_thread,.blog_pagination {
-  color: black;
-  background-color: #eeeeec;
+  color: #333;
+  background-color: #ddd;
   padding: 16px;
   margin: 16px 0;
 }
@@ -140,3 +146,37 @@ a:active  {color:#3464a4;} /* selected link */
     height: 1%; }
   *:first-child + html .digg_pagination {
     overflow: hidden; }
+
+.blog_header a {
+  text-decoration: none;
+  color: #eeeeec;
+}
+
+.blog_header a:active {
+  color: #eeeeec;
+}
+
+.blog_header a:visited {
+  color: #eeeeec;
+}
+
+.blog_header .social {
+	text-align: center;
+}
+
+.blog_header .social span {
+	display: block;
+	margin-top: 12px;
+}
+
+.blog_header .social .icon {
+	font-size: 50px;
+}
+
+.blog_header {
+	text-align: center;
+}
+
+.blog_header .title {
+	text-align: left;
+}
