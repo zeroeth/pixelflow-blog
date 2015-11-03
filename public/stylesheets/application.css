@@ -13,7 +13,7 @@ code {
 
 .blog_header {
   margin-top: 16px;
-  text-shadow: 0 0 15px #677;
+  text-shadow: 0 0 10px #677;
   font-family: 'hyperspacebold';
 }
 
@@ -35,7 +35,26 @@ code {
 
 .blog_header img {
   height: 100px;
-  margin-left: -50px;
+}
+
+.blog_header svg {
+	height: 100px;
+	width: 100px;
+	-webkit-filter: drop-shadow(0 0 10px #677);
+	filter: drop-shadow(0 0 10px #677);
+}
+
+.blog_header svg path {
+	stroke-width: 10px !important;
+}
+
+.blog_header .center {
+	position: absolute;
+	left: 50%;
+}
+
+.blog_header .logo {
+	margin-left: -50px;
 }
 
 #notice {
@@ -58,7 +77,7 @@ code {
   color: #ef2929;
 }
 
-.blog_post, #disqus_thread,.blog_pagination {
+.container, .blog_post, #disqus_thread,.blog_pagination {
   color: #333;
   background-color: #ddd;
   padding: 16px;

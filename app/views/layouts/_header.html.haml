@@ -1,16 +1,16 @@
 .blog_header
-  = link_to "/" do
-    = image_tag "hexflower_big.png"
+  .center.logo
+    = render 'layouts/hex_vector'
   .left.title
     %h1 Pixelflow
     .text
-      A Robotic Ruby Symphony
+      An Intergalactic Discourse
   .right.social
-    = link_to "https://twitter.com/kevinalford", target: '_blank' do
-      <span class="icon icon-birdy"></span><span class="text">Twitter</span>
-  .right.social
-    = link_to "https://github.com/zeroeth", target: '_blank' do
-      <span class="icon icon-catopus"></span><span class="text">Github</span>
+    = link_to 'Kevin Alford 2015 CV.pdf' do
+      <span class="icon icon-birdy"></span><span class="text">CV</span>
   .right.social
     = link_to blog_posts_path do
       <span class="icon icon-ruby"></span><span class="text">Articles</span>
+  .right.social
+    = link_to portfolio_path do
+      <span class="icon icon-catopus"></span><span class="text">Projects</span>
