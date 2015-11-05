@@ -11,8 +11,13 @@ code {
   padding: 2px;
 }
 
+.clear {
+	clear: both;
+}
+
 .blog_header {
   margin-top: 16px;
+  margin-bottom: 16px;
   text-shadow: 0 0 10px #677;
   font-family: 'hyperspacebold';
 }
@@ -108,16 +113,6 @@ code {
   border-top-color: #ad7fa8; /* purple */
 }
 
-a:link    {color:#3464a4;} /* unvisited link */
-a:visited {color:#3464a4;} /* visited link */
-a:hover   {color:#3464a4;} /* mouse over link */
-a:active  {color:#3464a4;} /* selected link */
-
-.personal_links a:link    {color:#729fcf;} /* unvisited link */
-.personal_links a:visited {color:#729fcf;} /* visited link */
-.personal_links a:hover   {color:#729fcf;} /* mouse over link */
-.personal_links a:active  {color:#729fcf;} /* selected link */
-
 .digg_pagination {
   cursor: default;
   /* self-clearing method: */ }
@@ -171,12 +166,27 @@ a:active  {color:#3464a4;} /* selected link */
   color: #eeeeec;
 }
 
+.blog_header a .icon {
+  transition: color 1s;
+}
+
+
 .blog_header a:active {
   color: #eeeeec;
 }
 
 .blog_header a:visited {
   color: #eeeeec;
+}
+
+.blog_header a:hover .icon-ruby  {
+	color: rgb(255, 0, 255);
+}
+.blog_header a:hover .icon-flask  {
+	color: rgb(0, 255, 255);
+}
+.blog_header a:hover .icon-bulb  {
+	color: rgb(255, 255, 0);
 }
 
 .blog_header .social {
