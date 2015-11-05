@@ -166,9 +166,20 @@ code {
   color: #eeeeec;
 }
 
-.blog_header a .icon {
-  transition: color 1s;
+.blog_header a .icon, .blog_header a .text {
+  transition: color 0.75s;
 }
+
+.d1 { transition-delay: 0.1s; }
+.d2 { transition-delay: 0.2s; }
+.d3 { transition-delay: 0.3s; }
+.d4 { transition-delay: 0.4s; }
+.d5 { transition-delay: 0.5s; }
+.d6 { transition-delay: 0.6s; }
+.d7 { transition-delay: 0.7s; }
+.d8 { transition-delay: 0.8s; }
+.d9 { transition-delay: 0.9s; }
+.d10 { transition-delay: 0.10s; }
 
 
 .blog_header a:active {
@@ -179,13 +190,13 @@ code {
   color: #eeeeec;
 }
 
-.blog_header a:hover .icon-ruby  {
+.blog_header a:hover .pinkit  {
 	color: rgb(255, 0, 255);
 }
-.blog_header a:hover .icon-flask  {
+.blog_header a:hover .blueit  {
 	color: rgb(0, 255, 255);
 }
-.blog_header a:hover .icon-bulb  {
+.blog_header a:hover .yellowit  {
 	color: rgb(255, 255, 0);
 }
 
@@ -193,7 +204,7 @@ code {
 	text-align: center;
 }
 
-.blog_header .social span {
+.blog_header .social .icon, .blog_header .social .text {
 	display: block;
 	margin-top: 12px;
 }
