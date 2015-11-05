@@ -1,15 +1,12 @@
-.grid_6.alpha
-  .container.petal
-    hi im a cat
-.grid_6.omega
-  .container.petal
-    hi im a dog
-.clear
-
-.grid_6.alpha
-  .container.petal
-    hi im a catfish
-.grid_6.omega
-  .container.petal
-    hi im a dogfish
-.clear
+- @projects.each_with_index do |project, index|
+  - if index.even?
+    .grid_6.alpha
+      .container
+        .project
+          cat
+  - else
+    .grid_6.omega
+      .container
+        .project
+          dog
+    .clear

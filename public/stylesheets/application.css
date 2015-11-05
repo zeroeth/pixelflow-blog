@@ -18,7 +18,7 @@ code {
 .blog_header {
   margin-top: 16px;
   margin-bottom: 16px;
-  text-shadow: 0 0 10px #677;
+  text-shadow: 0 0 5px rgba(102,119,119,0.5);
   font-family: 'hyperspacebold';
 }
 
@@ -45,8 +45,8 @@ code {
 .blog_header svg {
 	height: 100px;
 	width: 100px;
-	-webkit-filter: drop-shadow(0 0 10px #677);
-	filter: drop-shadow(0 0 10px #677);
+	-webkit-filter: drop-shadow(0 0 5px rgba(102,119,119,0.5));
+	filter: drop-shadow(0 0 5px rgba(102,119,119,0.5));
 }
 
 .blog_header svg path {
