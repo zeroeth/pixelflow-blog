@@ -1,6 +1,6 @@
 - @labs.each_with_index do |lab|
   .grid_12.alpha.omega
     .project{style: "background-image: url('#{image_path(lab[:image])}')"}
-      %h2.title
+      %h1.title
         = link_to lab[:url], target: "_blank" do
           = lab[:name]

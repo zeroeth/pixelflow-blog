@@ -1,3 +1,5 @@
+/* General stuff */
+
 body {
   color: #eeeeec;
   background-color: #222;
@@ -14,6 +16,9 @@ code {
 .clear {
 	clear: both;
 }
+
+
+/* Header */
 
 .blog_header {
   margin-top: 16px;
@@ -61,140 +66,6 @@ code {
 .blog_header .logo {
 	margin-left: -50px;
 }
-
-#notice {
-  padding: 16px;
-  background-color: #729fcf;
-  margin: 16px 0;
-  border-left: 10px solid;
-  border-left-color: #d3d7cf;
-}
-
-#error_explanation {
-  color: #2e3436;
-  background-color: #d3d7cf;
-  margin: 16px 0;
-  padding: 16px;
-}
-
-.field_with_errors label
-{
-  color: #ef2929;
-}
-
-.container, .blog_post, #disqus_thread,.blog_pagination {
-  color: #333;
-  background-color: #ddd;
-  padding: 16px;
-  margin: 16px 0;
-}
-
-.petal {
-  border-top: 10px solid;
-  border-top-color: #555753;
-}
-.petal_1 {
-  border-top-color: #ef2929; /* red */
-}
-
-.petal_2 {
-  border-top-color: #fcaf3e; /* orange */
-}
-
-.petal_3 {
-  border-top-color: #8ae234; /* green */
-}
-
-.petal_4 {
-  border-top-color: #729fcf; /* blue */
-}
-
-.petal_5 {
-  border-top-color: #ad7fa8; /* purple */
-}
-
-.project {
-	margin-bottom: 30px;
-	height: 200px;
-	background-position: center;
-	background-size: cover;
-}
-
-.project a {
-	text-decoration: none;
-	color: #eee;
-	padding: 0.5em 1em;
-	display: inline-block;
-	height: 100%;
-	width: 100%;
-	transition: color 1s;
-	transition-delay: 0.5s;
-	box-sizing: border-box;
-}
-.project .title {
-	font-family: 'hyperspacebold';
-	text-shadow: 0 0 10px rgba(0,0,0,0.5);
-	background-color: rgba(0,0,0,0.5);
-	margin: 0;
-	padding: 0;
-	transition: background-color 1s;
-}
-
-.project .title:hover {
-	background-color: rgba(255, 255, 255, 0.65);
-}
-
-.project .title:hover a {
-	color: #000;
-}
-
-.digg_pagination {
-  cursor: default;
-  /* self-clearing method: */ }
-  .digg_pagination a, .digg_pagination span, .digg_pagination em {
-    padding: 0.2em 0.5em;
-    display: block;
-    float: left;
-    margin-right: 1px; }
-  .digg_pagination .disabled {
-    color: #999999;
-    border: 1px solid #dddddd; }
-  .digg_pagination .current {
-    font-style: normal;
-    font-weight: bold;
-    color: #eeeeec; }
-
-  .digg_pagination .current:nth-child(5n+0) {
-    background: #ad7fa8;
-    border: 1px solid #ad7fa8; }
-  .digg_pagination .current:nth-child(5n+1) {
-    background: #729fcf;
-    border: 1px solid #729fcf; }
-  .digg_pagination .current:nth-child(5n+2) {
-    background: #8ae234;
-    border: 1px solid #8ae234; }
-  .digg_pagination .current:nth-child(5n+3) {
-    background: #fcaf3e;
-    border: 1px solid #fcaf3e; }
-  .digg_pagination .current:nth-child(5n+4) {
-    background: #ef2929;
-    border: 1px solid #ef2929; }
-
-  .digg_pagination a {
-    text-decoration: none;
-    color: #eeeeec;
-	background: #555753;
-    border: 1px solid #555753; }
-  .digg_pagination:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden; }
-  * html .digg_pagination {
-    height: 1%; }
-  *:first-child + html .digg_pagination {
-    overflow: hidden; }
 
 .blog_header a {
   text-decoration: none;
@@ -259,3 +130,125 @@ code {
 .blog_header .title {
 	text-align: left;
 }
+
+
+/* Rails stuff */
+
+#notice {
+  padding: 16px;
+  background-color: #729fcf;
+  margin: 16px 0;
+  border-left: 10px solid;
+  border-left-color: #d3d7cf;
+}
+
+#error_explanation {
+  color: #2e3436;
+  background-color: #d3d7cf;
+  margin: 16px 0;
+  padding: 16px;
+}
+
+.field_with_errors label
+{
+  color: #ef2929;
+}
+
+
+/* Project/Lab boxes */
+
+.project {
+	margin-bottom: 30px;
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+
+.project a {
+	text-decoration: none;
+	color: #eee;
+	padding: 0.5em 1em;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	transition: color 1s;
+	transition-delay: 0.5s;
+	box-sizing: border-box;
+}
+
+.project .title {
+	font-family: 'hyperspacebold';
+	text-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.5);
+	margin: 0;
+	padding: 0;
+	transition: background-color 1s;
+}
+
+.project .title:hover {
+	background-color: rgba(255, 255, 255, 0.65);
+}
+
+.project .title:hover a {
+	color: #000;
+}
+
+
+/* Pagination */
+
+.blog_pagination {
+  color: #333;
+  background-color: #ddd;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+
+.digg_pagination {
+  cursor: default;
+  /* self-clearing method: */ }
+  .digg_pagination a, .digg_pagination span, .digg_pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+  .digg_pagination .disabled {
+    color: #999999;
+    border: 1px solid #dddddd; }
+  .digg_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    color: #eeeeec; }
+
+  .digg_pagination .current:nth-child(5n+0) {
+    background: #ad7fa8;
+    border: 1px solid #ad7fa8; }
+  .digg_pagination .current:nth-child(5n+1) {
+    background: #729fcf;
+    border: 1px solid #729fcf; }
+  .digg_pagination .current:nth-child(5n+2) {
+    background: #8ae234;
+    border: 1px solid #8ae234; }
+  .digg_pagination .current:nth-child(5n+3) {
+    background: #fcaf3e;
+    border: 1px solid #fcaf3e; }
+  .digg_pagination .current:nth-child(5n+4) {
+    background: #ef2929;
+    border: 1px solid #ef2929; }
+
+  .digg_pagination a {
+    text-decoration: none;
+    color: #eeeeec;
+	background: #555753;
+    border: 1px solid #555753; }
+  .digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .digg_pagination {
+    height: 1%; }
+  *:first-child + html .digg_pagination {
+    overflow: hidden; }
+

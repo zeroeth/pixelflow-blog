@@ -1,5 +1,5 @@
 - @blog_posts.each do |blog_post|
-  .blog_post{class: "petal petal_#{blog_post.id % 5 + 1}"}
+  .blog_post
     %h1
       =link_to blog_post.title, blog_post
     .blog_body
