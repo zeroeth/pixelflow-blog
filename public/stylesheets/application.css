@@ -251,51 +251,43 @@ code {
 
 /* Pagination */
 
-.blog_pagination {
-  color: #333;
-  background-color: #ddd;
-  padding: 16px;
-  margin: 16px 0;
-}
-
-
 .digg_pagination {
   cursor: default;
+  font-family: 'hyperspacebold';
   /* self-clearing method: */ }
   .digg_pagination a, .digg_pagination span, .digg_pagination em {
     padding: 0.2em 0.5em;
     display: block;
     float: left;
-    margin-right: 1px; }
+    margin-right: 1em;
+	transition: color 0.5s, background-color 0.5s;
+}
+.digg_pagination a:hover {
+	background-color: #eeeeec;
+	color: #222;
+}
   .digg_pagination .disabled {
-    color: #999999;
-    border: 1px solid #dddddd; }
+    color: #999;
+    border: 1px solid #999; }
   .digg_pagination .current {
     font-style: normal;
     font-weight: bold;
-    color: #eeeeec; }
+    color: #222; }
 
-  .digg_pagination .current:nth-child(5n+0) {
-    background: #ad7fa8;
-    border: 1px solid #ad7fa8; }
-  .digg_pagination .current:nth-child(5n+1) {
-    background: #729fcf;
-    border: 1px solid #729fcf; }
-  .digg_pagination .current:nth-child(5n+2) {
-    background: #8ae234;
-    border: 1px solid #8ae234; }
-  .digg_pagination .current:nth-child(5n+3) {
-    background: #fcaf3e;
-    border: 1px solid #fcaf3e; }
-  .digg_pagination .current:nth-child(5n+4) {
-    background: #ef2929;
-    border: 1px solid #ef2929; }
+  .digg_pagination .current:nth-child(3n+0) {
+    background: #0ff;
+    border: 1px solid #0ff; }
+  .digg_pagination .current:nth-child(3n+1) {
+    background: #f0f;
+    border: 1px solid #f0f; }
+  .digg_pagination .current:nth-child(3n+2) {
+    background: #ff0;
+    border: 1px solid #ff0; }
 
   .digg_pagination a {
     text-decoration: none;
     color: #eeeeec;
-	background: #555753;
-    border: 1px solid #555753; }
+    border: 1px solid #eeeeec; }
   .digg_pagination:after {
     content: ".";
     display: block;
