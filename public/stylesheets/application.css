@@ -17,7 +17,7 @@ code {
 
 .blog_header {
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
   text-shadow: 0 0 5px rgba(102,119,119,0.5);
   font-family: 'hyperspacebold';
 }
@@ -113,6 +113,40 @@ code {
   border-top-color: #ad7fa8; /* purple */
 }
 
+.project {
+	margin-bottom: 20px;
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+
+.project a {
+	text-decoration: none;
+	color: #eee;
+	padding: 0.5em 1em;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	transition: color 1s;
+	transition-delay: 0.5s;
+}
+.project .title {
+	font-family: 'hyperspacebold';
+	text-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.5);
+	margin: 0;
+	padding: 0;
+	transition: background-color 1s;
+}
+
+.project .title:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.project .title:hover a {
+	color: #111;
+}
+
 .digg_pagination {
   cursor: default;
   /* self-clearing method: */ }
@@ -166,7 +200,10 @@ code {
   color: #eeeeec;
 }
 
-.blog_header a .icon, .blog_header a .text {
+.blog_header a .icon {
+  transition: color 1s;
+}
+.blog_header a .text {
   transition: color 0.75s;
 }
 
@@ -179,7 +216,7 @@ code {
 .d7 { transition-delay: 0.7s; }
 .d8 { transition-delay: 0.8s; }
 .d9 { transition-delay: 0.9s; }
-.d10 { transition-delay: 0.10s; }
+.d10 { transition-delay: 1.0s; }
 
 
 .blog_header a:active {
@@ -215,6 +252,7 @@ code {
 
 .blog_header {
 	text-align: center;
+	position: relative;
 }
 
 .blog_header .title {

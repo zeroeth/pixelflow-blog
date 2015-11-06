@@ -1,12 +1,6 @@
 - @projects.each_with_index do |project, index|
-  - if index.even?
-    .grid_6.alpha
-      .container
-        .project
-          cat
-  - else
-    .grid_6.omega
-      .container
-        .project
-          dog
-    .clear
+  %div{class: index.even? ? "grid_6 alpha" : "grid_6 omega"}
+    .project{style: "background-image: url('#{image_path(project[:image])}')"}
+      %h2.title
+        = link_to project[:url] do
+          = project[:name]
