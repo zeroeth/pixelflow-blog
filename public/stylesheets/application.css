@@ -129,6 +129,7 @@ code {
 	width: 100%;
 	transition: color 1s;
 	transition-delay: 0.5s;
+	box-sizing: border-box;
 }
 .project .title {
 	font-family: 'hyperspacebold';
