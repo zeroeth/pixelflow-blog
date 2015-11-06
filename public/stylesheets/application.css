@@ -114,7 +114,7 @@ code {
 }
 
 .project {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	height: 200px;
 	background-position: center;
 	background-size: cover;
@@ -141,11 +141,11 @@ code {
 }
 
 .project .title:hover {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.65);
 }
 
 .project .title:hover a {
-	color: #111;
+	color: #000;
 }
 
 .digg_pagination {
